@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import './App.css';
 import NavBar from './components/NavBar';
 
@@ -21,7 +21,6 @@ function App() {
         </a> */}
         <NavBar />
       </header>
-      <Outlet />
     </div>
   );
 }

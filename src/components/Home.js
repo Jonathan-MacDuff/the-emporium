@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import { Outlet } from "react-router-dom";
 
 function Home() {
 
 
     return (
         <main>
-            <Outlet />
+            <p>Home</p>
         </main>
     )
 }
+
+export default Home;
