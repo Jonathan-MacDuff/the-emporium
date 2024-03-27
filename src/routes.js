@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Musings from "./pages/Musings";
+import Work from "./pages/Work";
 import ErrorPage from "./components/ErrorPage";
 
 const routes = [
@@ -26,6 +27,10 @@ const routes = [
             {
                 path: "/musings",
                 element: <Musings />
+            },
+            {
+                path: "/work",
+                element: <Work />
             }
         ]
     }
