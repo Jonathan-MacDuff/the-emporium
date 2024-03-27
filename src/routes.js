@@ -1,15 +1,15 @@
 import App from "./App";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Musings from "./components/Musings";
-//  import ErrorPage from "./components/ErrorPage";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Musings from "./pages/Musings";
+import ErrorPage from "./components/ErrorPage";
 
 const routes = [
     {
         path: "/",
         element: <App />,
-        // errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",
