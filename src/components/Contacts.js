@@ -1,18 +1,6 @@
-import { useState, useEffect } from "react";
 import SingleContact from "./SingleContact";
 
-function Contacts() {
-
-    const [contacts, setContacts] = useState([]);
-
-    useEffect(() => {
-        fetch("http://localhost:3000/contacts")
-        .then((r) => r.json())
-        .then((currentContacts) => setContacts(currentContacts))
-    }, []);
-
-    console.log(contacts)
-
+function Contacts({contacts}) {
 
 
     return (

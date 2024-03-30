@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function ContactForm() {
+function ContactForm({ contacts, setContacts }) {
 
     const [contactInfo, setContactInfo] = useState({
         "firstName": "",
@@ -29,7 +29,7 @@ function ContactForm() {
             body: JSON.stringify(contactInfo),
         })
         .then((r) => r.json())
-        .then((newContact) => console.log(newContact));
+        .then((newContact) => setContacts([...contacts, newContact]));
         setContactInfo({
             "firstName": "",
             "lastName": "",
@@ -38,9 +38,6 @@ function ContactForm() {
             "message": ""
         })
     };
-
-
-
 
     return (
         <form id="contactForm" onSubmit={handleSubmit}>
