@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import SingleContact from "./SingleContact";
 
 function Contacts() {
 
@@ -16,10 +17,10 @@ function Contacts() {
 
     return (
     <div id="contacts">
-        <h1>Contacts</h1>
-        {/* {contacts.map((contact) => (
-
-        ))} */}
+        <h1>Current Contacts</h1>
+        {contacts.map((contact) => (
+            <SingleContact contact={contact} key={contact.id} />
+        ))}
     </div>    
     )
 };
