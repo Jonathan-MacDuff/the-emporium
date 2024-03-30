@@ -3,31 +3,29 @@ import { useState, useEffect } from "react";
 
 function ContactForm() {
 
-    const [contactInfo, setContactInfo] = useState();
+    const [contactInfo, setContactInfo] = useState({
+        "firstName": "",
+        "lastName": "",
+        "phone": "",
+        "email": "",
+        "message": ""
+    });
 
-    useEffect(() => {
-        setContactInfo({
-            "firstName": "",
-            "lastName": "",
-            "phone": "",
-            "email": "",
-            "message": ""
-        })
-    }, [])
-
-    console.log(contactInfo);
 
     function onFieldChange(event) {
-        const id = event.target.id;
-        
+        setContactInfo({
+            ...contactInfo,
+            [event.target.id]: event.target.value
+        })
     };
 
+    console.log(contactInfo);
 
     return (
         <form>
             <label htmlFor="firstName">First Name: </label>
             <br/>
-            <input id="firstName" /*value={contactInfo.firstName}*/></input>
+            <input id="firstName" value={contactInfo.firstName} onChange={onFieldChange}></input>
             <br/>
             <label htmlFor="lastName">Last Name: </label>
             <br/>
@@ -51,4 +49,4 @@ function ContactForm() {
 };
 
 
-export default ContactForm
+export default ContactForm;
