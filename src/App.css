@@ -9,6 +9,11 @@
 
 #contactForm {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 #contacts {
