@@ -5,7 +5,8 @@ function Contacts() {
 
 
     return (
-    <div>
+    <div id="contacts">
+        <h1>Contacts</h1>
 
     </div>    
     )

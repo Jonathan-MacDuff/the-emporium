@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 
 function ContactForm() {
@@ -22,7 +22,8 @@ function ContactForm() {
     console.log(contactInfo);
 
     return (
-        <form>
+        <form id="contactForm">
+            <h1>Contact Form</h1>
             <label htmlFor="firstName">First Name: </label>
             <br/>
             <input id="firstName" value={contactInfo.firstName} onChange={onFieldChange}></input>
