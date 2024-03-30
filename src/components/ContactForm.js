@@ -19,10 +19,31 @@ function ContactForm() {
         })
     };
 
-    console.log(contactInfo);
+    function handleSubmit(event) {
+        event.preventDefault();
+        fetch("http://localhost:3000/contacts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(contactInfo),
+        })
+        .then((r) => r.json())
+        .then((newContact) => console.log(newContact));
+        setContactInfo({
+            "firstName": "",
+            "lastName": "",
+            "phone": "",
+            "email": "",
+            "message": ""
+        })
+    };
+
+
+
 
     return (
-        <form id="contactForm">
+        <form id="contactForm" onSubmit={handleSubmit}>
             <h1>Contact Form</h1>
             <label htmlFor="firstName">First Name: </label>
             <input 
@@ -56,7 +77,7 @@ function ContactForm() {
                 onChange={onFieldChange}
             ></textarea>
             <br/>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </form>
     )
 };

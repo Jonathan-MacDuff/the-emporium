@@ -1,5 +1,20 @@
 {
-    "tester": {
-        "id": 42
+  "contacts": [
+    {
+      "id": "3b0c",
+      "firstName": "Jon",
+      "lastName": "Mac",
+      "phone": "5",
+      "email": "jon.mac",
+      "message": "Testing"
+    },
+    {
+      "id": "1aa1",
+      "firstName": "Jon",
+      "lastName": "Mac",
+      "phone": "5",
+      "email": "jon.mac",
+      "message": "Testing"
     }
+  ]
 }
