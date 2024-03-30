@@ -1,32 +1,47 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 function ContactForm() {
 
-    const [contactInfo, setContactInfo] = useState({});
+    const [contactInfo, setContactInfo] = useState();
 
+    useEffect(() => {
+        setContactInfo({
+            "firstName": "",
+            "lastName": "",
+            "phone": "",
+            "email": "",
+            "message": ""
+        })
+    }, [])
 
+    console.log(contactInfo);
+
+    function onFieldChange(event) {
+        const id = event.target.id;
+        
+    };
 
 
     return (
         <form>
-            <label for="first-name" value={contactInfo.firstName}>First Name: </label>
+            <label htmlFor="firstName">First Name: </label>
             <br/>
-            <input id="first-name"></input>
+            <input id="firstName" /*value={contactInfo.firstName}*/></input>
             <br/>
-            <label for="last-name">Last Name: </label>
+            <label htmlFor="lastName">Last Name: </label>
             <br/>
-            <input id="last-name"></input>
+            <input id="lastName"></input>
             <br/>
-            <label for="phone">Phone: </label>
+            <label htmlFor="phone">Phone: </label>
             <br/>
             <input id="phone"></input>
             <br/>
-            <label for="email">Email: </label>
+            <label htmlFor="email">Email: </label>
             <br/>
             <input id="email"></input>
             <br/>
-            <label for="message">Message: </label>
+            <label htmlFor="message">Message: </label>
             <br/>
             <input id="message"></input>
             <br/>
