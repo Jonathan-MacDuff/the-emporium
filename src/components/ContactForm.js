@@ -1,10 +1,16 @@
-
+import { useState } from "react";
 
 
 function ContactForm() {
+
+    const [contactInfo, setContactInfo] = useState({});
+
+
+
+
     return (
         <form>
-            <label for="first-name">First Name: </label>
+            <label for="first-name" value={contactInfo.firstName}>First Name: </label>
             <br/>
             <input id="first-name"></input>
             <br/>
