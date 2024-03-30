@@ -25,15 +25,36 @@ function ContactForm() {
         <form id="contactForm">
             <h1>Contact Form</h1>
             <label htmlFor="firstName">First Name: </label>
-            <input id="firstName" value={contactInfo.firstName} onChange={onFieldChange}></input>
+            <input 
+                id="firstName" 
+                value={contactInfo.firstName} 
+                onChange={onFieldChange}>
+            </input>
             <label htmlFor="lastName">Last Name: </label>
-            <input id="lastName" value={contactInfo.lastName} onChange={onFieldChange}></input>
+            <input 
+                id="lastName" 
+                value={contactInfo.lastName} 
+                onChange={onFieldChange}
+            ></input>
             <label htmlFor="phone">Phone: </label>
-            <input id="phone" value={contactInfo.phone} onChange={onFieldChange}></input>
+            <input 
+                id="phone" 
+                value={contactInfo.phone} 
+                onChange={onFieldChange}
+            ></input>
             <label htmlFor="email">Email: </label>
-            <input id="email" value={contactInfo.email} onChange={onFieldChange}></input>
+            <input 
+                id="email" 
+                value={contactInfo.email} 
+                onChange={onFieldChange}
+            ></input>
             <label htmlFor="message">Message: </label>
-            <input id="message" value={contactInfo.message} onChange={onFieldChange}></input>
+            <textarea 
+                id="message" 
+                rows={5}
+                value={contactInfo.message} 
+                onChange={onFieldChange}
+            ></textarea>
             <br/>
             <button>Submit</button>
         </form>

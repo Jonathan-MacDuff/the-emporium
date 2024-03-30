@@ -20,7 +20,9 @@
   text-align: center;
 }
 
-
+#message {
+  resize: vertical;
+}
 
 
 
