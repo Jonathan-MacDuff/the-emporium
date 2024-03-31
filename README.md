@@ -1,3 +1,12 @@
+Welcome to my personal website! Here, you'll find all my personal projects, blogs, and other relevant information. You can also contact me by filling out the appropriate form. Thanks for stopping by!
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
