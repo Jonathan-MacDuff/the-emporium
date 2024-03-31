@@ -1,7 +1,4 @@
-
-
 function Musings() {
-
     return (
         <div>
             <p>Musings</p>

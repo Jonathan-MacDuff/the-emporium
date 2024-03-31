@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 function ContactForm({ contacts, setContacts }) {
 
     const [contactInfo, setContactInfo] = useState({
@@ -10,7 +9,6 @@ function ContactForm({ contacts, setContacts }) {
         "email": "",
         "message": ""
     });
-
 
     function onFieldChange(event) {
         setContactInfo({
