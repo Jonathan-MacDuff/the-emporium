@@ -11,6 +11,7 @@ function Contact() {
         fetch("http://localhost:4000/contacts")
         .then((r) => r.json())
         .then((currentContacts) => setContacts(currentContacts))
+        .error((e) => console.error(e))
     }, []);
 
     return (
