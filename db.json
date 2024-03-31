@@ -1,33 +1,17 @@
 {
   "contacts": [
     {
-      "id": "3b0c",
-      "firstName": "Jon",
-      "lastName": "Mac",
-      "phone": "5",
-      "email": "jon.mac",
-      "message": "Testing"
-    },
-    {
-      "id": "1aa1",
-      "firstName": "Jon",
-      "lastName": "Mac",
-      "phone": "5",
-      "email": "jon.mac",
-      "message": "Testing"
-    },
-    {
-      "id": "7c67",
-      "firstName": "test",
-      "lastName": "",
-      "phone": "",
-      "email": "",
+      "id": "057e",
+      "firstName": "Jonathan",
+      "lastName": "MacDuff",
+      "phone": "5099990244",
+      "email": "jonathan.macduff@outlook.com",
       "message": ""
     },
     {
-      "id": "a02a",
-      "firstName": "test",
-      "lastName": "",
+      "id": "0f11",
+      "firstName": "Angelina",
+      "lastName": "Scher",
       "phone": "",
       "email": "",
       "message": ""

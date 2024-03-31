@@ -21,7 +21,7 @@ function ContactForm({ contacts, setContacts }) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        fetch("http://localhost:3000/contacts", {
+        fetch("http://localhost:4000/contacts", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

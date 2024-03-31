@@ -8,7 +8,7 @@ function Contact() {
     const [contacts, setContacts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/contacts")
+        fetch("http://localhost:4000/contacts")
         .then((r) => r.json())
         .then((currentContacts) => setContacts(currentContacts))
     }, []);
