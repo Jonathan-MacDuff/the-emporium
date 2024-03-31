@@ -37,7 +37,7 @@ function ContactForm({ contacts, setContacts }) {
             "email": "",
             "message": ""
         })
-        .error((e) => console.error(e))
+        .catch((e) => console.error(e))
     };
 
     return (
