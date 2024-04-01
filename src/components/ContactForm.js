@@ -43,37 +43,42 @@ function ContactForm({ contacts, setContacts }) {
             <h1>Contact Form</h1>
             <label htmlFor="firstName">First Name: </label>
             <input 
+                className="formInput"
                 id="firstName" 
                 value={contactInfo.firstName} 
                 onChange={onFieldChange}>
             </input>
             <label htmlFor="lastName">Last Name: </label>
             <input 
+                className="formInput"
                 id="lastName" 
                 value={contactInfo.lastName} 
                 onChange={onFieldChange}
             ></input>
             <label htmlFor="phone">Phone: </label>
             <input 
+                className="formInput"
                 id="phone" 
                 value={contactInfo.phone} 
                 onChange={onFieldChange}
             ></input>
             <label htmlFor="email">Email: </label>
             <input 
+                className="formInput"
                 id="email" 
                 value={contactInfo.email} 
                 onChange={onFieldChange}
             ></input>
             <label htmlFor="message">Message: </label>
             <textarea 
+                className="formInput"
                 id="message" 
                 rows={5}
                 value={contactInfo.message} 
                 onChange={onFieldChange}
             ></textarea>
             <br/>
-            <button type="submit">Submit</button>
+            <button className="formInput" id="submit" type="submit">Submit</button>
         </form>
     )
 };
