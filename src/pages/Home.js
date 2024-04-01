@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Home() {
     return (
         <main>
-            <h1 id="homeHeader">Welcome</h1>
+            <h1 id="homeHeader">Welcome!</h1>
             <div id="homePanelContainer">                
                 <NavLink 
                 className="homePanel" 
