@@ -7,6 +7,14 @@ body {
   margin-right: 10%;
 }
 
+.homePanel {
+  background-color: aliceblue;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  
+}
+
 .NavBar {
   text-align: center;
   background-color: aliceblue;
@@ -43,4 +51,14 @@ body {
 
 #submit {
   margin-bottom: 30px;
+}
+
+#homeHeader {
+  color: aliceblue;
+  text-align: center;
+}
+
+#homePanelContainer {
+  display: inline-block;
+  
 }
