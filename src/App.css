@@ -8,11 +8,15 @@ body {
 }
 
 .homePanel {
-  background-color: aliceblue;
-  margin-left: 20px;
-  margin-right: 20px;
-  display: flex;
-  
+  background-image: url(./images/getty-images-glbiLU7qTyQ-unsplash.jpg);
+  flex: 1 0 40%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .NavBar {
@@ -59,6 +63,9 @@ body {
 }
 
 #homePanelContainer {
-  display: inline-block;
-  
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
