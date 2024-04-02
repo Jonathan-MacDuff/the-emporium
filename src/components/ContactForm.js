@@ -27,15 +27,16 @@ function ContactForm({ contacts, setContacts }) {
             body: JSON.stringify(contactInfo),
         })
         .then((r) => r.json())
-        .then((newContact) => setContacts([...contacts, newContact]));
+        .then((newContact) => setContacts([...contacts, newContact]))
+        .catch((e) => console.error(e));
+
         setContactInfo({
             "firstName": "",
             "lastName": "",
             "phone": "",
             "email": "",
             "message": ""
-        })
-        .catch((e) => console.error(e))
+        });
     };
 
     return (
