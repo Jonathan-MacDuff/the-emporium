@@ -8,7 +8,7 @@ body {
 }
 
 .homePanel {
-  background-image: url(./images/getty-images-glbiLU7qTyQ-unsplash.jpg);
+  background-color: aliceblue;
   flex: 1 0 40%;
   text-align: center;
   box-sizing: border-box;
@@ -83,6 +83,18 @@ body {
 }
 
 #mediumPanel {
+  background-color: aliceblue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 80vh;
+}
+
+#aboutMe {
   background-color: aliceblue;
   text-align: center;
   display: flex;

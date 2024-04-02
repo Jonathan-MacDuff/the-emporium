@@ -1,7 +1,8 @@
 function About() {
     return(
-        <div>
-            <p>About</p>
+        <div id="aboutMe">
+            <h1>About Me</h1>
+            <p>Hi there! My name's Jonathan MacDuff, and I'm a salesperson learning to be a software engineer.</p>
         </div>
     )
 };
