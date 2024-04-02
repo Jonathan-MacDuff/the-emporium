@@ -3,7 +3,8 @@ function Work() {
         <a  
         id="githubPanel"
         href="https://github.com/jonathan-macduff"
-        target="_blank">
+        target="_blank"
+        rel="noreferrer">
             My GitHub
         </a>
     )

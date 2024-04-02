@@ -3,7 +3,8 @@ function Musings() {
         <a 
         id="mediumPanel"
         href="https://medium.com/@jonathan-macduff"
-        target="_blank">
+        target="_blank"
+        rel="noreferrer">
             My Medium     
         </a> 
     )
