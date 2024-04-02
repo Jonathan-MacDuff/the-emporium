@@ -1,7 +1,12 @@
 function Work() {
     return (
         <div>
-            <p>Work</p>
+            <a 
+            id="githubPanel" 
+            href="https://github.com/jonathan-macduff"
+            target="_blank">
+                My GitHub
+            </a>
         </div>
     )
 };
