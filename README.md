@@ -4,6 +4,6 @@ For now, I'm leaving this unhosted, so to get started, fork and clone this repo 
 
 References:
 Blog: https://medium.com/@jonathan-macduff/phase-2-react-3177d9d58d1d
-Video Walkthrough: 
+Video Walkthrough: https://youtu.be/3AePu0kzmWQ
 
 Images courtesy of Unsplash
