@@ -1,5 +1,4 @@
 import ContactForm from "../components/ContactForm";
-import Contacts from "../components/Contacts";
 import { useState, useEffect } from "react";
 
 function Contact() {
@@ -16,7 +15,6 @@ function Contact() {
     return (
         <div>
             <ContactForm contacts={contacts} setContacts={setContacts} />
-            <Contacts contacts={contacts}/>
         </div>
     )
 }
